@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Oluwaloni James Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <a href="#" class="logo">JOLUXDESIGNS</a>
+
+      <nav class="navbar" id="side-menu">
+        <i id="fas" class="fa-solid fa-xmark" onclick="closemenu()"></i>
+        <a href="#" style="--i: 1" class="active">Home</a>
+        <a href="#about" style="--i: 2">About</a>
+        <a href="#services" style="--i: 3">Skills</a>
+        <a href="#skills" style="--i: 4">Portfolio</a>
+        <a href="#project" style="--i: 4">Project</a>
+        <a href="#contact" style="--i: 5">Contact</a>
+      </nav>
+      <div><i id="fas" class="fa-solid fa-bars" onclick="openmenu()"></i></div>
+    </header>
+    <section class="home">
+      <div class="home-content">
+        <h3>Hello, It's me</h3>
+        <h2>Oluwaloni James</h2>
+        <h3>And I'm a <span class="text"></span></h3>
+        <p>
+          I'm a web Developer with extensive experience for over 3 years. <br />
+          I specialize in creating stylise, attractive and responsive websites
+          and mobile applications
+        </p>
+        <div class="home-sci">
+          <a href="https://facebook.com/" style="--i: 7"
+            ><i class="fa-brands fa-facebook"></i
+          ></a>
+          <a href="#" style="--i: 8"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" style="--i: 9"><i class="fa-brands fa-twitter"></i></a>
+          <a
+            href="https://www.linkedin.com/in/james-oluwaloni-075696228/"
+            style="--i: 10"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
+        </div>
+        <a href="#" class="btn-box">More About Me</a>
+      </div>
+      <div><img class="prof-img" src="assets/bg.png" alt="" /></div>
+      <span class="home-imgHover"></span>
+    </section>
+
+    <section class="about" id="about">
+      <div class="about-img">
+        <img class="abt-img" src="assets/DSC_2096 copy.jpg" alt="" />
+      </div>
+      <div class="about-text">
+        <h2>About <span>Me</span></h2>
+        <h4>Full Stack Developer!</h4>
+        <p class="about-details">
+          I am a passionate UI/UX Designer and Full Stack Web App Developer with
+          a diploma in Full Stack Web Development from FemTech IT Institute.
+          With hands-on experience in HTML, CSS, Tailwind CSS, JavaScript,
+          Node.js, MySQL, React.js, TypeScript, and React Native, I specialize
+          in creating engaging user experiences and robust web applications. I
+          thrive on transforming ideas into functional designs and code,
+          ensuring both aesthetic appeal and seamless functionality.
+        </p>
+        <div class="tab-titles">
+          <p class="tab-links active-link" onclick="opentab('skills')">
+            Skills
+          </p>
+          <p class="tab-links" onclick="opentab('experience')">Experience</p>
+          <p class="tab-links" onclick="opentab('education')">Education</p>
+        </div>
+        <div class="tab-contents active-tab" id="skills">
+          <ul>
+            <li>
+              <span>UI/UX</span><br />
+              Designer Web/App interfaces
+            </li>
+            <li>
+              <span>Web Development</span><br />
+              Web app Development
+            </li>
+            <li>
+              <span>App Development</span><br />
+              Building Android/iOS apps
+            </li>
+          </ul>
+        </div>
+        <div class="tab-contents" id="experience">
+          <ul>
+            <li>
+              <span>2019 - Current</span><br />
+              studying and learning UI/UX Design
+            </li>
+            <li>
+              <span>2024</span><br />
+              Studied Web/App Development at Femtech IT Training Institute
+            </li>
+            <li>
+              <span>2024</span><br />
+              Built a web/App for food recipes and also worked on the frontend
+              aspect of a student performance grading Website
+            </li>
+          </ul>
+        </div>
+        <div class="tab-contents" id="education">
+          <ul>
+            <li>
+              <span>2017 - 2023</span><br />
+              Schooled at MESL Secondary Staff School Life-camp, Jebba-North
+            </li>
+            <li>
+              <span>2024</span><br />
+              Diploma from Femtech IT Training Institute
+            </li>
+            <li>
+              <span>2024 - Current</span><br />
+              Studying Computer Science at UNIVERSITY OF ILORIN, ILORIN, KWARA
+              STATE.
+            </li>
+          </ul>
+        </div>
+
+        <div class="certificates">
+          <h2>Certificates</h2>
+          <h3 class="femtec-cert">Femtech <span>Training Institute</span></h3>
+          <div>
+            <img class="cert-pic" src="assets/FemTech cert.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="Skills">
+      <div class="services" id="services">
+        <div class="container">
+          <h1 class="sub-title">My <span>Services</span></h1>
+          <div class="services-list">
+            <div>
+              <i class="fa-solid fa-code" style="color: #00eeff"></i>
+              <h2>Web Design</h2>
+              <p>
+                Creating visually captivating and user-friendly websites is my
+                expertise. I blend aesthetics with functionality to design sites
+                that not only look great but also provide an exceptional user
+                experience. From concept to launch, I focus on clean design,
+                intuitive navigation, and responsive layouts that work
+                seamlessly across all devices. Let’s bring your online presence
+                to life with a website that stands out and delivers results.
+              </p>
+              <a href="#" class="read">learn more</a>
+            </div>
+            <div>
+              <i class="fa-solid fa-crop-simple" style="color: #00eeff"></i>
+              <h2>UI/UX Design</h2>
+              <p>
+                Crafting visually stunning and highly intuitive user interfaces
+                is my passion. I focus on creating designs that enhance user
+                experience through thoughtful layout, effective navigation, and
+                engaging visuals. By blending creativity with user-centered
+                design principles, I deliver solutions that are not only
+                aesthetically pleasing but also functional and easy to use. From
+                wireframes to final designs, I ensure every element aligns with
+                your brand and meets your users’ needs. Let’s make your digital
+                experience memorable and impactful.
+              </p>
+              <a href="#" class="read">learn more</a>
+            </div>
+            <div>
+              <i class="fa-brands fa-app-store" style="color: #00eeff"></i>
+              <h2>App Design</h2>
+              <p>
+                Transforming ideas into innovative, high-performance mobile and
+                web applications is our specialty. With a focus on user-centric
+                design and cutting-edge technology, I craft solutions that not
+                only meet but exceed client expectations. From concept and
+                wireframing to development and deployment, each project is
+                approached with meticulous attention to detail and a commitment
+                to delivering seamless, intuitive user experiences
+              </p>
+              <a href="#" class="read">learn more</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <h1 class="sub-title">My <span>Skills</span></h1>
+
+    <section class="skills-sec">
+      <div class="container1" id="skills">
+        <h1 class="heading1">Technical Skills</h1>
+        <div class="technical-skills-cont">
+          <div class="first-skills-set">
+            <div class="Technical-bars">
+              <div class="bar">
+                <div class="info">
+                  <i class="fa-brands fa-html5" style="color: #e44d26"></i>
+                  <span>HTML</span>
+                </div>
+                <div class="progress-line html">
+                  <span></span>
+                </div>
+              </div>
+              <div class="bar">
+                <div class="info">
+                  <i class="fa-brands fa-css3-alt" style="color: #264de4"></i>
+                  <span>CSS</span>
+                </div>
+                <div class="progress-line css">
+                  <span></span>
+                </div>
+              </div>
+              <div class="bar">
+                <div class="info">
+                  <i class="bx bxl-tailwind-css" style="color: #0bb5d5"></i>
+                  <span>TailwindCSS</span>
+                </div>
+                <div class="progress-line TailCSS">
+                  <span></span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="second-skills-set">
+            <div class="bar">
+              <div class="info">
+                <i class="fa-brands fa-js" style="color: #f2bf25"></i>
+                <span>JavaScript</span>
+              </div>
+              <div class="progress-line JS">
+                <span></span>
+              </div>
+            </div>
+            <div class="bar">
+              <div class="info">
+                <i class="fa-brands fa-react" style="color: #00d8ff"></i>
+                <span>ReactJS</span>
+              </div>
+              <div class="progress-line react">
+                <span></span>
+              </div>
+            </div>
+            <div class="bar">
+              <div class="info">
+                <i class="fa-brands fa-react" style="color: #00d8ff"></i>
+                <span>React-Native</span>
+              </div>
+              <div class="progress-line react-native">
+                <span></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="third-skills-set">
+            <div class="bar">
+              <div class="info">
+                <i class="bx bxl-typescript" style="color: #3178c6"></i>
+                <span>TypeScript</span>
+              </div>
+              <div class="progress-line TS">
+                <span></span>
+              </div>
+            </div>
+            <div class="bar">
+              <div class="info">
+                <i class="fa-brands fa-node" style="color: #76ae63"></i>
+                <span>NodeJS</span>
+              </div>
+              <div class="progress-line node">
+                <span></span>
+              </div>
+            </div>
+            <div class="bar">
+              <div class="info">
+                <i class="fa-solid fa-database" style="color: #4479a1"></i>
+                <span>MYSQL</span>
+              </div>
+              <div class="progress-line mysql">
+                <span></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div id="Portfolio" class="project">
+        <div class="main-text" id="project">
+          <h2>Latest <span>Project</span></h2>
+
+          <div class="Portfolio-content">
+            <div class="row">
+              <img src="assets/Screenshot (845).png" alt="" />
+              <div class="layer">
+                <h5>Food Recipe Web App</h5>
+                <p>
+                  Explore, save, and share delicious recipes with ease. Our app
+                  offers a vast collection of recipes, intuitive search filters,
+                  and personalized recommendations to inspire your next culinary
+                  adventure. Cook up something amazing today!
+                </p>
+
+                <a href="https://recipe-net.vercel.app/"
+                  ><i class="fa-solid fa-arrow-up-right-from-square"></i
+                ></a>
+              </div>
+            </div>
+            <div class="row">
+              <img src="assets/Screenshot (868).png" alt="" />
+              <div class="layer">
+                <h5>Student performance grading web/applicaiton</h5>
+                <p>
+                  Efficiently track and manage student performance with our
+                  innovative grading web/app. Designed for educators and
+                  administrators, this tool simplifies grading, provides
+                  insightful analytics, and streamlines the assessment process.
+                  With an intuitive interface and robust features.
+                </p>
+
+                <a href="#"
+                  ><i class="fa-solid fa-arrow-up-right-from-square"></i
+                ></a>
+              </div>
+            </div>
+            <div class="row">
+              <img src="assets/work-3.png" alt="" />
+              <div class="layer">
+                <h5>Online Shopping App</h5>
+                <p>
+                  Seamlessly browse, compare, and purchase your favorite
+                  products with ease. Our user-friendly interface and secure
+                  payment options ensure a smooth shopping experience from start
+                  to finish. Shop anytime, anywhere!
+                </p>
+
+                <a href="#"
+                  ><i class="fa-solid fa-arrow-up-right-from-square"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="contact-text">
+        <h2>Contact <span>Me</span></h2>
+        <h4>Let's work Together</h4>
+        <p>
+          I’d love to hear from you! Whether you have a question, a project
+          idea, or just want to connect, feel free to reach out. I’m always
+          excited to collaborate and explore new opportunities.
+        </p>
+        <div class="contact-list">
+          <p>
+            <i class="fa-solid fa-paper-plane"></i> oluwalonijames@gmail.com
+          </p>
+          <p><i class="fa-solid fa-square-phone"></i> 08142775676</p>
+        </div>
+        <div class="contact-icons">
+          <a href="https://facebook.com/"
+            ><i class="fa-brands fa-facebook"></i
+          ></a>
+          <a href="#"><i class="fa-brands fa-twitter-square"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/james-oluwaloni-075696228/"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
+        </div>
+      </div>
+
+      <div class="contact-form">
+        <form name="submit-to-google-sheet" action="">
+          <input
+            name="Name"
+            id="ninput"
+            type="text"
+            placeholder="Name"
+            required
+          />
+          <input
+            name="Email"
+            id="emailinput"
+            type="email"
+            placeholder="Enter Your Email"
+            required
+          />
+          <input
+            name="Subject"
+            id="sinput"
+            type="text"
+            placeholder="Enter Your Subject"
+          />
+          <textarea
+            name="Message"
+            id="mesginput"
+            cols="40"
+            rows="10"
+            placeholder="Enter Your Message"
+          ></textarea>
+          <button type="submit" value="submit" class="send">Submit</button>
+        </form>
+      </div>
+    </section>
+    <div class="footer">
+      <p>Oluwaloni James @ 2024</p>
+    </div>
+    <a href="#" class="top"><i class="bx bx-up-arrow-alt"></i></a>
+
+    <script src="index.js"></script>
+  </body>
+</html>
